@@ -7,8 +7,22 @@ public class Main {
     public static void main(String[] args) {
         // arrayPractice();
 //        hashMapPractice();
-        forLoopWithVariable();
-        forLoopWithCollection();
+//        forLoopWithVariable();
+//        forLoopWithCollection();
+        numbers20To30();
+        numbers10To0();
+    }
+    
+    public static void numbers10To0() {
+        for (var i = 10; i > 0; i--) {
+            System.out.println(i);
+        }
+    }
+
+    public static void numbers20To30() {
+        for (var i = 20; i <= 30; i++) {
+            System.out.println(i);
+        }
     }
 
     public static void forLoopWithVariable() {
