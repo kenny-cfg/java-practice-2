@@ -5,6 +5,7 @@ import java.util.Map;
 
 public class Main {
     public static void main(String[] args) {
+
         // arrayPractice();
 //        hashMapPractice();
 //        forLoopWithVariable();
@@ -14,14 +15,73 @@ public class Main {
 //        forLoopExercise2();
 //        exercise3();
 //        exercise4();
-        exercise4WithTernary();
+//        exercise4WithTernary();
+        refactorExample();
     }
 
+    public static void refactorExample() {
+        /*
+        Original code:
+        int num1 = 10;
+        int num2 = 5;
+        String operation = "+";
+        int result;
+        if (operation.equals("+")) {
+            result = num1 + num2;
+        } else if (operation.equals("-")) {
+            result = num1 - num2;
+        } else {
+            System.out.println("Invalid operation!");
+            return;
+        }
+        System.out.println("Result: " + result);
+         */
+
+        int num1 = 10;
+        int num2 = 5;
+        String operation = "+";
+        int result;
+        if (operation.equals("+")) {
+            result = num1 + num2;
+        } else if (operation.equals("-")) {
+            result = num1 - num2;
+        } else {
+            System.out.println("Invalid operation!");
+            return;
+        }
+        System.out.println("Result: " + result);
+    }
+
+    /*
+    public: accessible from all other classes
+    static: don't need an instance of the class to call it
+    void: return type. Void means 'don't return anything'
+    function name: has to be unique within the class (sort of)
+    (): arguments list, in this case, it's empty
+     */
     public static void exercise4WithTernary() {
         int[] myNums = {1, 2, 3, 4, 5};
         for (int num : myNums) {
-            System.out.println(num % 2 == 0 ? "even" : "odd");
+            System.out.println(getEvenOddStringIndicator(num));
         }
+    }
+    /*
+    int num1 = 10;
+int num2 = 5;
+String operation = "+";
+int result;
+if (operation.equals("+")) {
+result = num1 + num2;
+} else if (operation.equals("-")) {
+result = num1 - num2;
+} else {
+System.out.println("Invalid operation!");
+return; }
+System.out.println("Result: " + result);
+     */
+
+    private static String getEvenOddStringIndicator(int num) {
+        return num % 2 == 0 ? "even" : "odd";
     }
 
     public static void exercise4() {
