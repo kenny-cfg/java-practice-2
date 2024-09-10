@@ -11,13 +11,46 @@ public class Main {
 //        forLoopWithCollection();
 //        numbers20To30();
 //        numbers10To0();
-        forLoopExercise2();
+//        forLoopExercise2();
+//        exercise3();
+        exercise4();
+    }
+
+    public static void exercise4() {
+        /*
+        I have an array of numbers int myNums = {1,2,3,4,5};
+        Iterate through the array
+        If the number is even, print out “even number”!
+        Otherwise, print out “not even…”
+        */
+        int[] myNums = {1, 2, 3, 4, 5};
+        for (int num : myNums) {
+            if (num % 2 == 0) {
+                System.out.println("even");
+            } else {
+                System.out.println("odd");
+            }
+        }
+    }
+
+    public static void exercise3() {
+        /*
+            count = 0
+            while count is less than 10, print out “hi”, and +1 to count every time
+            Once finished, print out “fin!”
+         */
+        var count = 0;
+        while (count < 10) {
+            System.out.println("hi");
+            count++;
+        }
+        System.out.println("fin!");
     }
 
     public static void forLoopExercise2() {
-        int[]numbers = {1,2,3,4,5};
-        for (int i: numbers) {
-            System.out.println(i*i);
+        int[] numbers = {1, 2, 3, 4, 5};
+        for (int i : numbers) {
+            System.out.println(i * i);
         }
     }
 
