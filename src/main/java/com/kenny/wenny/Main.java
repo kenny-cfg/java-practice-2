@@ -13,7 +13,15 @@ public class Main {
 //        numbers10To0();
 //        forLoopExercise2();
 //        exercise3();
-        exercise4();
+//        exercise4();
+        exercise4WithTernary();
+    }
+
+    public static void exercise4WithTernary() {
+        int[] myNums = {1, 2, 3, 4, 5};
+        for (int num : myNums) {
+            System.out.println(num % 2 == 0 ? "even" : "odd");
+        }
     }
 
     public static void exercise4() {
