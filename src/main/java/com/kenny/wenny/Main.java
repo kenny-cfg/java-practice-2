@@ -6,7 +6,22 @@ import java.util.Map;
 public class Main {
     public static void main(String[] args) {
         // arrayPractice();
-        hashMapPractice();
+//        hashMapPractice();
+        forLoopWithVariable();
+        forLoopWithCollection();
+    }
+
+    public static void forLoopWithVariable() {
+        for (var i = 0; i < 10; i++) {
+            System.out.println(i);
+        }
+    }
+
+    public static void forLoopWithCollection() {
+        var arrayOfStrings = new String[]{"Laila", "Moge"};
+        for (var string : arrayOfStrings) {
+            System.out.println(string);
+        }
     }
 
     public static void arrayPractice() {
